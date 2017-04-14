@@ -1,0 +1,285 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wrap {
+	max-width: 1600px;
+	width: 100%;
+	margin: 0 auto;
+}
+/* === header === */
+header {
+	width: 100%;
+	padding-top: 66.68%;
+	background-color: #555;
+	background: url(../images/layer-25.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+	position: relative;
+	
+}
+	nav {
+	width: 90%;
+	position: absolute;
+	left: 40px;
+	top: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	}
+
+		.logo {
+			font-size: 2em;
+			color: #fff;
+			text-decoration: none;
+			font-family: sans-serif;
+			letter-spacing: 0.1em;
+
+
+		}
+
+		.logo:before {
+		content: url(../images/shape.png);
+		position: absolute;
+		left: -40px;
+		top: -10px;
+		}
+		.logo:after {
+		content: url(../images/rectangle-17.png);
+		position: absolute;
+		left: 6px;
+		top: 12px;
+		}
+
+	
+		.menu li {
+		list-style-type: none;
+		float: left;
+		margin-left: 40px;
+		}
+
+		.menu a {
+			color: #fff;
+			font-size: 1em;
+			font-family: sans-serif;
+			text-decoration: none;
+		}
+	
+	.menuBtn {
+		display: none;
+		width: 40px;
+		height: 40px;
+		background-color: #cacaca;
+		position: relative;
+		border-radius: 4px;
+	}
+		.menuBtn span {
+			display: block;
+			width: 30px;
+			height: 3px;
+			border-radius: 1px;
+			background-color: #000;
+			position: absolute;
+			left: 5px;
+
+			transition: all .1s linear;
+		}
+
+		.menuBtn span:nth-child(1) {
+			top: 8px;
+		}
+		.menuBtn span:nth-child(2) {
+			top: 18px;
+		}
+		.menuBtn span:nth-child(3) {
+			top: 28px;
+		}
+
+	.slogan {
+		position: absolute;
+		left: 40px;
+		bottom: 12%;
+		font-size: 1.5em;
+		text-transform: uppercase;
+		font-family: sans-serif;
+		word-spacing: 0.2em;
+	}
+
+		.slogan h1 span {
+			color: #a2ca28;
+		}
+		.slogan p span {
+			color: #fd634e;
+		}
+
+
+/* === /header === */
+
+/* === main === */
+
+	.main-top-wrap {
+ 	background-color: #a2ca28;
+
+ 	}
+		.features {
+			margin: 0 auto;
+ 			max-width: 1200px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+			.features section {
+			border: 1px solid;
+			width: 22%;
+			min-width: 200px;
+			padding-top: 45px;
+			}
+
+
+				.features section p {
+					color: #8297a7;
+				}
+				.features section a {
+					text-decoration: none;
+					color: #00aeef;
+				}
+				.features section h1 {
+					position: relative;
+				}
+				.features section:nth-child(1) h1:before {
+					content: url(../images/Shape-7.png);
+					position: absolute;
+					left: 0;
+					top: -45px;
+				}
+				.features section:nth-child(2) h1:before {
+					content: url(../images/Shape-8.png);
+					position: absolute;
+					left: 0;
+					top: -45px;
+				}
+				.features section:nth-child(3) h1:before {
+					content: url(../images/Shape-11.png);
+					position: absolute;
+					left: 0;
+					top: -45px;
+				}
+				.features section:nth-child(4) h1:before {
+					content: url(../images/Shape-10.png);
+					position: absolute;
+					left: 0;
+					top: -45px;
+				}
+		.content {
+			width: 100%;
+			max-width: 1200px;
+			margin: 0 auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+
+
+		}
+			.smallBlock {
+				width: 33%;
+				background-color: #fff;
+				padding: 20px 0;
+			}
+				.smallBlock .block-label {
+					color: #fd634e;
+				}
+				.smallBlock h1 {
+					color: #a2ca28;
+				}
+				.smallBlock p {
+					color: #656e74;
+				}
+				.smallBlock a {
+					color: #a2ca28;
+				}
+
+			.largeBlock {
+				width: 67%;
+				background-color: #777;
+				padding-top: 33%;
+			}
+			.content div:nth-child(2) {
+				background: no-repeat url(../images/Layer-26.jpg);
+				background-size: cover;
+				background-position: 0 -50px;
+			}
+			.content div:nth-child(3) {
+				background: no-repeat url(../images/Layer-28.jpg);
+				background-size: cover;
+				background-position: 0 -90px;
+			}
+
+ 	.main-bottom-wrap {
+ 		background-color: #fd634e;
+ 	}
+
+/* === /main === */
+
+/* === footer === */
+footer {
+	
+}
+/* === /footer === */
+
+
+
+
+	/* ===	media	=== */
+
+@media (max-width: 1180px) {
+		.slogan {
+			font-size: 1.1em;
+			left: 20px;
+			bottom: 8%;
+		}
+}
+
+@media (max-width: 780px) {
+		.menu {
+			display: none;
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 50px;
+			z-index: 1;
+		}
+			.menu li {
+				float: none;
+				margin-left: 0;
+				width: 100%;
+				
+			}
+				.menu li a {
+					display: block;
+					width: 100%;
+					background-color: rgba(25,35,45,.6);
+					border-bottom: 1px solid #999;
+					text-align: center;
+					padding: 15px 0;
+				}
+				/* attention!!! */
+				.menu li a:hover {
+					background-color: rgba(25,35,45,.8); 
+				}
+		.menuBtn {
+			display: block;
+		}
+
+		.features {
+			justify-content: space-around;
+		}
+			.features section {
+				width: 40%;
+			}
+
+}
+
+/* === /media === */
