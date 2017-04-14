@@ -206,12 +206,12 @@ header {
 				background-color: #777;
 				padding-top: 33%;
 			}
-			.content div:nth-child(2) {
+			.main-top-wrap .content div:nth-child(2) {
 				background: no-repeat url(../images/Layer-26.jpg);
 				background-size: cover;
 				background-position: 0 -50px;
 			}
-			.content div:nth-child(3) {
+			.main-top-wrap .content div:nth-child(3) {
 				background: no-repeat url(../images/Layer-28.jpg);
 				background-size: cover;
 				background-position: 0 -90px;
@@ -220,6 +220,37 @@ header {
  	.main-bottom-wrap {
  		background-color: #fd634e;
  	}
+
+ 		.main-bottom-wrap .content div:nth-child(1) {
+ 			background: no-repeat url(../images/Layer-27.jpg);
+			background-size: cover;
+			
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(2) {
+ 			background: no-repeat url(../images/Layer-29.jpg);
+			background-size: cover;
+			background-position: 0 -90px;
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(4) {
+ 			background-color: #a2ca28;
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(5) {
+ 			background: no-repeat url(../images/Layer-31.jpg);
+			background-size: cover;
+			
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(6) {
+ 			background: no-repeat url(../images/Layer-30.jpg);
+			background-size: cover;
+			
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(7) {
+ 			background-color: #fff;
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(8) {
+ 			background-color: #a2ca28;
+ 		}
+
 
 /* === /main === */
 
@@ -260,14 +291,14 @@ footer {
 				.menu li a {
 					display: block;
 					width: 100%;
-					background-color: rgba(25,35,45,.6);
+					background-color: rgba(25,35,45,.8);
 					border-bottom: 1px solid #999;
 					text-align: center;
 					padding: 15px 0;
 				}
 				/* attention!!! */
 				.menu li a:hover {
-					background-color: rgba(25,35,45,.8); 
+					background-color: rgba(25,35,45,1); 
 				}
 		.menuBtn {
 			display: block;
