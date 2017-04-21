@@ -4,7 +4,8 @@
 	box-sizing: border-box;
 }
 
-.wrap {
+.wrap,
+.footer-warp {
 	max-width: 1600px;
 	width: 100%;
 	margin: 0 auto;
@@ -58,6 +59,8 @@ header {
 		list-style-type: none;
 		float: left;
 		margin-left: 40px;
+
+		position: relative;
 		}
 
 		.menu a {
@@ -65,7 +68,25 @@ header {
 			font-size: 1em;
 			font-family: sans-serif;
 			text-decoration: none;
+			position: relative;
 		}
+		
+		.menu a:hover + .linkAnimation {
+			width: 100%;
+		}
+
+		.linkAnimation {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			height: 2px;
+			width: 0%;
+			background-color: #71a237;
+			transition: all .2s ease-in-out;
+		}
+
+		
 	
 	.menuBtn {
 		display: none;
@@ -121,6 +142,7 @@ header {
 
 	.main-top-wrap {
  	background-color: #a2ca28;
+ 	padding-top: 95px;
 
  	}
 		.features {
@@ -133,21 +155,33 @@ header {
 		}
 			.features section {
 			border: 1px solid;
-			width: 22%;
-			min-width: 200px;
-			padding-top: 45px;
+			flex: 1;
+			padding: 45px 0;
+			font-family: sans-serif;
+			position: relative;
+			min-width: 250px;
+			margin-top: 15px;
+
 			}
 
 
 				.features section p {
 					color: #8297a7;
+					font-size: 14px;
+					line-height: 1.8em;
+					margin-top: 1.8em;
 				}
 				.features section a {
 					text-decoration: none;
 					color: #00aeef;
+					font-size: 14px;
+					position: absolute;
+					bottom: 0;
 				}
 				.features section h1 {
 					position: relative;
+					font-size: 24px;
+
 				}
 				.features section:nth-child(1) h1:before {
 					content: url(../images/Shape-7.png);
@@ -184,15 +218,23 @@ header {
 
 		}
 			.smallBlock {
-				width: 33%;
+				flex-grow: 1;
+				flex-basis: 333px;
 				background-color: #fff;
 				padding: 20px 0;
 			}
-				.smallBlock .block-label {
+			.main-top-wrap .smallBlock {
+				text-align: center;
+			}
+				.smallBlock .block-label,
+				.largeBlock .block-label {
 					color: #fd634e;
+					text-transform: uppercase;
 				}
 				.smallBlock h1 {
 					color: #a2ca28;
+					font-size: 2em;
+					text-transform: uppercase;
 				}
 				.smallBlock p {
 					color: #656e74;
@@ -202,10 +244,24 @@ header {
 				}
 
 			.largeBlock {
-				width: 67%;
+				flex-grow: 3;
+				flex-basis: 670px;
 				background-color: #777;
 				padding-top: 33%;
+				position: relative;
 			}
+				.main-top-wrap .largeBlock p {
+					color: #fd634e;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+				}
+				.main-top-wrap .largeBlock p:after {
+					content: url(../images/shape-9.png);
+				}
+					.main-top-wrap .largeBlock p span {
+						color: #fff;
+					}
 			.main-top-wrap .content div:nth-child(2) {
 				background: no-repeat url(../images/Layer-26.jpg);
 				background-size: cover;
@@ -222,42 +278,86 @@ header {
  	}
 
  		.main-bottom-wrap .content div:nth-child(1) {
- 			background: no-repeat url(../images/Layer-27.jpg);
-			background-size: cover;
+ 			background: no-repeat url(../images/Layer-271.jpg);
+			background-position: 95% 10%;
+			order: 1;
 			
  		}
  		.main-bottom-wrap .content div:nth-child(2) {
  			background: no-repeat url(../images/Layer-29.jpg);
 			background-size: cover;
 			background-position: 0 -90px;
+			order: 2;
+ 		}
+ 		.main-bottom-wrap .content div:nth-child(3) {
+ 			order: 3;
  		}
  		.main-bottom-wrap .content div:nth-child(4) {
  			background-color: #a2ca28;
+ 			order: 4;
  		}
  		.main-bottom-wrap .content div:nth-child(5) {
  			background: no-repeat url(../images/Layer-31.jpg);
 			background-size: cover;
+			order: 5;
 			
  		}
  		.main-bottom-wrap .content div:nth-child(6) {
  			background: no-repeat url(../images/Layer-30.jpg);
 			background-size: cover;
-			
+			order: 6;
  		}
  		.main-bottom-wrap .content div:nth-child(7) {
- 			background-color: #fff;
+ 			background-color: #199;
+ 			order: 7;
+ 			padding-top: 10%;	
+
  		}
  		.main-bottom-wrap .content div:nth-child(8) {
  			background-color: #a2ca28;
+ 			order: 8;
  		}
+ 			.main-bottom-wrap .content div:nth-child(8) p,
+ 			.main-bottom-wrap .content div:nth-child(8) h1 {
+ 				color: #fff;
+ 			}
+ 			
 
 
 /* === /main === */
+/* === banner === */
+
+.banner {
+	text-align: center;
+	color: #fff;
+	background: no-repeat url(../images/Layer-8.jpg);
+	background-size: cover;
+	padding-top: 66%;
+	position: relative;
+
+}
+	.banner h1,
+	.banner p {
+		position: absolute;
+		left: 0;
+	}
+	.banner h1 {
+
+	}
+
+
+/* === /banner === */
 
 /* === footer === */
-footer {
-	
+.footer-wrap {
+	background-color: #000;
 }
+	footer {
+		max-width: 1200px;
+		margin: 0 auto;
+		color: #fff;
+
+	}	
 /* === /footer === */
 
 
@@ -272,6 +372,47 @@ footer {
 			bottom: 8%;
 		}
 }
+
+@media (max-width: 1019px) {
+		.content {
+			flex-direction: column;
+		}
+			.smallBlock {
+				flex-basis: 0;
+			}
+			.largeBlock {
+				flex-basis: 0;
+				padding-top: 45%;
+			}
+
+			.main-top-wrap .content div:nth-child(2) {
+				background-position: 0 68%;
+			}
+			.main-bottom-wrap .content div:nth-child(1) {
+				padding-top: 45%;
+				background-size: 110%;
+			}
+		/* change blocks orders */
+			.main-bottom-wrap .content div:nth-child(2) {
+				order: 3;
+			}
+			.main-bottom-wrap .content div:nth-child(3)	{
+				order: 2;
+			}
+			.main-bottom-wrap .content div:nth-child(6) {
+				order: 7;
+			}
+			.main-bottom-wrap .content div:nth-child(7) {
+				order: 6;
+			}
+		/* /change blocks orders */
+			.main-bottom-wrap .content div:nth-child(6) {
+				padding-top: 45%;
+				background-position: 25% 55%;
+			}
+			
+}
+
 
 @media (max-width: 780px) {
 		.menu {
@@ -314,3 +455,4 @@ footer {
 }
 
 /* === /media === */
+
