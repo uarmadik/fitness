@@ -9,6 +9,7 @@
 		
 		if (displayValue == "none") {
 			menuList.style.display = "block";
+			menuList.style.opacity = "1";
 
 			span = document.querySelectorAll(".menuBtn span");
 			
