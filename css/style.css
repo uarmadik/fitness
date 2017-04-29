@@ -198,8 +198,6 @@ header {
 			font-family: sans-serif;
 			position: relative;
 			min-width: 250px;
-			margin-top: 5px;
-			background-color: #acd827;
 			}
 
 
@@ -621,6 +619,9 @@ header {
 }
 
 @media screen and (max-width: 1019px) {
+			.features section {
+				margin: 20px 5%;
+			}
 		.content {
 				-ms-flex-direction: column;
 			flex-direction: column;
