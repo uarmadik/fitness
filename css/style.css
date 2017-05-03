@@ -7,7 +7,6 @@
 .wrap,
 .footer-warp {
 	max-width: 1600px;
-	min-width: 340px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -565,7 +564,9 @@ header {
 		}
 		
 		/* /social links */
-
+		.form-wrap {
+			width: inherit;
+		}
 		.form-wrap:after {
 			content: "";
 			clear: both;
@@ -719,7 +720,9 @@ header {
 		.menuBtn {
 			display: block;
 		}
-
+	.main-top-wrap {
+		padding-top: 0;
+	}
 		.features {
 			justify-content: space-around;
 		}
@@ -742,6 +745,9 @@ header {
 }
 
 @media (max-width: 420px) {
+	nav {
+		width: 75%;
+	}	
 		.main-top-wrap .content div:nth-child(3) {
 			padding-top: 35%;
 			background-position: 0 -30px;
